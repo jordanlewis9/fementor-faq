@@ -1,0 +1,19 @@
+{
+  "name": "faq-accordion-card-main",
+  "version": "1.0.0",
+  "description": "Front End Mentor accordion project",
+  "main": "index.html",
+  "scripts": {
+    "start": "start index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanlewis9/fementor-faq.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordanlewis9/fementor-faq/issues"
+  },
+  "homepage": "https://github.com/jordanlewis9/fementor-faq#readme"
+}

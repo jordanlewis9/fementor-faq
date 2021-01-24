@@ -4,3 +4,29 @@ body {
   background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   font-family: "Kumbh Sans", sans-serif;
 }
+
+.accordion__header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  position: relative;
+  z-index: -1;
+}
+
+.accordion__content {
+  display: none;
+}
+
+.is_selected {
+  display: block;
+}
+
+.svg_selected {
+  transform: rotate(180deg);
+}
