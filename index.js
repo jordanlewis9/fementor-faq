@@ -16,18 +16,23 @@ const toggleAccordion = (e) => {
   if ( currentTarget === 0 ) {
     clickedSection.classList.add('is_selected');
     clickedSVG.classList.add('svg_selected');
+    clickedTarget.classList.add('header__selected')
     currentTarget = clickedTarget.dataset.tab
   } else if (currentTarget === clickedTargetNumber) {
     clickedSection.classList.remove('is_selected');
     clickedSVG.classList.remove('svg_selected');
+    clickedTarget.classList.remove('header__selected');
     currentTarget = 0;
   } else {
     let oldSection = document.querySelector(`.accordion__content--${currentTarget}`);
     let oldSVG = document.querySelector(`.accordion__svg--${currentTarget}`);
+    let oldTarget = document.querySelector(`.accordion__header--${currentTarget}`);
     oldSection.classList.remove('is_selected');
     oldSVG.classList.remove('svg_selected');
+    oldTarget.classList.remove('header__selected');
     clickedSection.classList.add('is_selected');
     clickedSVG.classList.add('svg_selected');
+    clickedTarget.classList.add('header__selected');
     currentTarget = clickedTargetNumber;
   }
 }
