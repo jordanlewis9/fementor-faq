@@ -41,7 +41,7 @@ body {
 
 .svg_transition_up {
   animation-name: arrowUp;
-  animation-duration: 300ms;
+  animation-duration: 150ms;
 }
 
 .svg_selected {
@@ -50,14 +50,41 @@ body {
 
 .svg_transition_down {
   animation-name: arrowDown;
-  animation-duration: 300ms;
+  animation-duration: 150ms;
 }
 
-// height property adjustable for slow transition to open menu??
-
-.header__selected {
+.header_selected {
   font-weight: 700;
   color: var(--boldtext);
+}
+
+.accordion_content_reveal {
+  animation-name: expandContent;
+  animation-duration: 150ms;
+}
+
+@keyframes expandContent {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+
+  25% {
+    display: block;
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes arrowUp {
