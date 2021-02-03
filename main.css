@@ -147,11 +147,11 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
-    margin: 0 5% 20%;
+    margin: 0 5% 10%;
   }
 
   .svg__desktop,
-  .svg__desktop--box {
+  .svg__container--box {
     display: none;
   }
 
@@ -196,11 +196,16 @@ body {
     max-width: 100%;
   }
 
-  .svg__desktop--box {
+  .svg__container--box {
     position: absolute;
     z-index: 1000;
     left: -10%;
     top: 40%;
+    max-width: 20%;
+  }
+
+  .svg__desktop--box {
+    width: 100%;
   }
 
   .accordion__container {
@@ -210,6 +215,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-right: 20%;
+    margin-bottom: 10%;
   }
 
   .svg__mobile {
